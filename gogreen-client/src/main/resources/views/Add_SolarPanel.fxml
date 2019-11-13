@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gogreenclient.screens.AddSolarPanelController">
+    <children>
+        <AnchorPane prefHeight="444.0" prefWidth="182.0" style="-fx-background-color: #00AB66;" HBox.hgrow="NEVER">
+            <children>
+                <GridPane layoutY="94.0" prefHeight="353.0" prefWidth="196.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.topAnchor="94.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.5999755859375" minWidth="0.0" prefWidth="0.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="230.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <JFXButton graphicTextGap="15.0" onAction="#switchFood" prefHeight="71.0" prefWidth="243.0" ripplerFill="SKYBLUE" text="Food related action" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1">
+                            <font>
+                                <Font name="Segoe UI Light" size="19.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconColor="#eaeaea" iconLiteral="fas-utensils" iconSize="24" strokeMiterLimit="15.0" />
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="15.0" onAction="#switchTransport" prefHeight="74.0" prefWidth="230.0" ripplerFill="SKYBLUE" text="Transport related action" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Segoe UI Light" size="18.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconColor="#eaeaea" iconLiteral="fas-bicycle" iconSize="24" strokeMiterLimit="15.0" />
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="12.0" prefHeight="68.0" prefWidth="230.0" ripplerFill="SKYBLUE" style="-fx-background-color: #4682B4;" text="Add a solar panel" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Segoe UI Light" size="18.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconColor="#eaeaea" iconLiteral="far-sun" iconSize="24" strokeMiterLimit="15.0" />
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="0.0" onAction="#switchRoom" prefHeight="67.0" prefWidth="230.0" ripplerFill="SKYBLUE" text="Adjust a room temperature" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Segoe UI Light" size="18.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconColor="#eaeaea" iconLiteral="fas-thermometer-half" iconSize="26" strokeMiterLimit="15.0" />
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="20.0" onAction="#switchPlantTree" prefHeight="79.0" prefWidth="206.0" ripplerFill="SKYBLUE" text="Plant a tree" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Segoe UI Light" size="19.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconColor="#eaeaea" iconLiteral="fas-tree" iconSize="24" strokeMiterLimit="15.0" />
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </GridPane>
+                <Label prefHeight="100.0" prefWidth="196.0" text="Green activities" textAlignment="CENTER" textFill="#eaeaea" wrapText="true">
+                    <font>
+                        <Font name="Segoe UI Light" size="32.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="444.0" prefWidth="462.0" style="-fx-background-color: #ffffffff;" HBox.hgrow="ALWAYS">
+            <children>
+                  <Label fx:id="fillAll" alignment="CENTER" contentDisplay="CENTER" layoutX="128.0" layoutY="347.0" prefHeight="24.0" prefWidth="208.0" text="Please fill all of the fields" textFill="RED" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="128.8">
+                      <font>
+                          <Font name="Segoe UI" size="19.0" />
+                      </font>
+                  </Label>
+                <VBox layoutX="7.0" layoutY="193.0" prefHeight="147.0" prefWidth="450.0" AnchorPane.bottomAnchor="104.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="193.0">
+                    <children>
+                        <HBox prefHeight="44.0" prefWidth="450.0" spacing="5.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Label contentDisplay="CENTER" prefHeight="58.0" prefWidth="238.0" text="Your current solar panel area:" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Century Gothic" size="15.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets right="3.0" />
+                                    </padding>
+                                </Label>
+                                <Label fx:id="initialSize" contentDisplay="CENTER" prefHeight="54.0" prefWidth="71.0" text=" setCsize" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Century Gothic" size="15.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets right="3.0" />
+                                    </padding>
+                                </Label>
+                                <Label contentDisplay="CENTER" prefHeight="54.0" prefWidth="108.0" text="square meters" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Century Gothic" size="15.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets right="3.0" />
+                                    </padding>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox spacing="15.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Label prefHeight="58.0" prefWidth="230.0" text="The new size of your solar panels:" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Century Gothic" size="15.0" />
+                                    </font>
+                                </Label>
+                                <JFXTextField fx:id="sizeOfSolarPanel" focusColor="TOMATO" prefHeight="31.0" prefWidth="64.0" promptText="Size" unFocusColor="#23ae36">
+                                    <font>
+                                        <Font name="System Italic" size="15.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets top="12.0" />
+                                    </HBox.margin>
+                                </JFXTextField>
+                                <Label contentDisplay="CENTER" prefHeight="54.0" prefWidth="108.0" text="square meters" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Century Gothic" size="15.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets right="3.0" />
+                                    </padding>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="20.0" prefWidth="450.0" spacing="12.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Label prefHeight="26.0" prefWidth="49.0" text="Date:" textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Century Gothic" size="16.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets top="5.0" />
+                                    </padding>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </Label>
+                                <JFXDatePicker fx:id="date" defaultColor="#00ab66" prefHeight="28.0" prefWidth="210.0" HBox.hgrow="ALWAYS" />
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="100.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="14.0" prefHeight="54.0" prefWidth="189.0" text="Solar Panels" textAlignment="CENTER" textFill="#00ab66" AnchorPane.leftAnchor="138.0" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="14.0">
+                    <font>
+                        <Font name="Segoe UI Light" size="37.0" />
+                    </font>
+                </Label>
+                <JFXButton buttonType="RAISED" layoutX="158.0" layoutY="370.0" onAction="#submitCO2Saved" prefHeight="58.0" prefWidth="186.0" ripplerFill="SKYBLUE" text="Submit" textFill="WHITE" AnchorPane.bottomAnchor="14.600000000000023" AnchorPane.leftAnchor="148.0" AnchorPane.rightAnchor="148.0">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </JFXButton>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="68.0" prefHeight="131.0" prefWidth="450.0" text="This page is for telling us if you are adding a solar panel, or adding more surface area to an already existing solar panel. Please tell us the surface area of your new solar panel, or if you are just increasing the size of a current solar panel, tell us how much you have increased it by." textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="68.0">
+                    <font>
+                        <Font name="Segoe UI Light" size="17.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="331.0" prefWidth="380.0" style="-fx-background-color: #F8F8F8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gogreenclient.screens.ChangeDetailsController">
+   <children>
+      <Label alignment="CENTER" layoutX="51.0" layoutY="14.0" prefHeight="62.0" prefWidth="278.0" text="Please fill in the form to delete your account" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Segoe UI Light" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="61.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#deleteAccount" prefHeight="34.0" prefWidth="95.0" ripplerFill="SKYBLUE" style="-fx-background-color: #F0F0F0; -fx-border-color: #b8b8b8;" text="Delete" AnchorPane.bottomAnchor="14.600000000000023" AnchorPane.leftAnchor="51.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI Light" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="223.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#no" prefHeight="34.0" prefWidth="95.0" ripplerFill="SKYBLUE" style="-fx-background-color: #F0F0F0; -fx-border-color: #b8b8b8;" text="Cancel" AnchorPane.bottomAnchor="14.600000000000023" AnchorPane.rightAnchor="51.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI Light" size="15.0" />
+         </font>
+      </JFXButton>
+      <VBox layoutX="51.0" layoutY="83.0" prefHeight="183.0" prefWidth="278.0" spacing="10.0" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="83.0">
+         <children>
+            <Label prefHeight="42.0" prefWidth="278.0" text="If you are sure you want to delete your account, type DELETE (all CAPITAL) in the box" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="password" focusColor="SKYBLUE" maxWidth="400.0" promptText="Password" unFocusColor="#23ae36" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="deleteBox" focusColor="SKYBLUE" promptText="&quot;the box&quot;" unFocusColor="#23ae36" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <Label prefHeight="50.0" prefWidth="278.0" text="We hope that deleting your account doesn't mean, that you will stop doing green activities" textAlignment="CENTER" textFill="#23ae36" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Light" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <DropShadow height="48.99" radius="15.4425" width="14.78" />
+   </effect>
+</AnchorPane>

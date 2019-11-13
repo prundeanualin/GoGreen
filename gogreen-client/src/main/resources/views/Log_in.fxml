@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="480.0" style="-fx-background-image: url('static/login_background.png');" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gogreenclient.screens.LoginController">
+    <children>
+        <Pane layoutX="36.0" layoutY="49.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="404.0" style="-fx-background-color: #00FA9A;">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="20.0" text="#G" textFill="#fffbfb">
+                    <font>
+                        <Font name="Agency FB" size="70.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="202.0" layoutY="20.0" prefHeight="84.0" prefWidth="147.0" text="GREEN" textFill="#fffbfb">
+                    <font>
+                        <Font name="Agency FB" size="70.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="74.0" fitWidth="74.0" layoutX="128.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../static/gg3.png" />
+                    </image>
+                    <effect>
+                        <ColorAdjust brightness="1.0" />
+                    </effect>
+                </ImageView>
+            </children>
+            <effect>
+                <DropShadow color="#229d0c80" />
+            </effect>
+        </Pane>
+        <Pane layoutX="36.0" layoutY="222.0" prefHeight="386.0" prefWidth="404.0" style="-fx-background-color: #00FA9A;">
+            <children>
+                <Label layoutX="151.0" layoutY="35.0" text="Log In " textFill="#fffbfb">
+                    <font>
+                        <Font name="Segoe UI" size="34.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="username" focusColor="#fbfcff" layoutX="81.0" layoutY="99.0" prefHeight="37.0" prefWidth="242.0" promptText="Username" unFocusColor="SEAGREEN" />
+                <JFXPasswordField fx:id="password" focusColor="#fbfcff" layoutX="81.0" layoutY="156.0" prefHeight="31.0" prefWidth="242.0" promptText="Password" unFocusColor="SEAGREEN" />
+                <JFXButton buttonType="RAISED" layoutX="115.0" layoutY="239.0" onAction="#login" prefHeight="64.0" prefWidth="174.0" ripplerFill="#f8fffb" stylesheets="@../static/hover.css" text="Sign In" textFill="#fffbfb">
+               <font>
+                  <Font name="Segoe UI Light" size="22.0" />
+               </font></JFXButton>
+                <Hyperlink fx:id="create" layoutX="77.0" layoutY="345.0" onAction="#switchToCreate" text="Are you new to the app? Create an account!">
+                    <font>
+                        <Font name="Segoe UI Light" size="13.0" />
+                    </font>
+                </Hyperlink>
+                <Label fx:id="combinationLabel" layoutX="89.0" layoutY="320.0" text="Incorrect username/password combination" textFill="#ff1515" visible="false" />
+            </children>
+            <effect>
+                <DropShadow color="#229d0c80" />
+            </effect>
+        </Pane>
+      <AnchorPane fx:id="loadingPane" opacity="0.5" prefHeight="644.0" prefWidth="480.0" style="-fx-background-color: #00FA9A;" visible="false">
+         <children>
+            <JFXSpinner layoutX="206.0" layoutY="290.0" prefHeight="64.0" prefWidth="67.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

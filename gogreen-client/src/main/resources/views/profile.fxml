@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<SplitPane xmlns:fx="http://javafx.com/fxml/1" dividerPositions="0.34615384615384615" maxHeight="-Infinity"
+           maxWidth="-Infinity"
+           minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+           xmlns="http://javafx.com/javafx/8">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0"
+                    style="-fx-background-color: green;">
+            <children>
+                <JFXButton layoutX="69.0" layoutY="1.0"/>
+                <?import com.jfoenix.controls.JFXDatePicker?>
+                <JFXDatePicker/>
+                260.0" />
+                <JFXButton layoutX="69.0" layoutY="291.0"/>
+                <JFXButton layoutX="69.0" layoutY="322.0"/>
+                <JFXButton layoutX="69.0" layoutY="353.0"/>
+                <Pane layoutX="-1.0" prefHeight="209.0" prefWidth="211.0" style="-fx-background-color: lightgreen;">
+                    <children>
+                        <JFXButton layoutX="68.0" layoutY="34.0"/>
+                        <JFXButton layoutX="68.0" layoutY="74.0"/>
+                        <JFXButton layoutX="68.0" layoutY="112.0"/>
+                        <JFXButton layoutX="68.0" layoutY="143.0"/>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="395.0"
+                    style="-fx-background-image: url('file:C:\Users\tltlt\IdeaProjects\builder\src\background.png')">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutY="14.0" prefHeight="48.0" prefWidth="380.0"
+                       text="MY PROFILE" textAlignment="CENTER">
+                    <font>
+                        <Font name="Comic Sans MS" size="45.0"/>
+                    </font>
+                </Label>
+                <LineChart layoutX="-3.0" layoutY="99.0" prefHeight="299.0" prefWidth="387.0"
+                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="99.0">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM"/>
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT"/>
+                    </yAxis>
+                </LineChart>
+                <AnchorPane layoutX="14.0" layoutY="111.0" prefHeight="200.0" prefWidth="200.0"/>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0" prefWidth="380.0" style="-fx-background-color: #F8F8F8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gogreenclient.screens.AddFriendPopController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="14.0" prefHeight="67.0" prefWidth="330.0" text="Please write down the username of the friend you want to add" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font name="Segoe UI Light" size="17.0" />
+            </font>
+        </Label>
+        <JFXButton layoutX="61.0" layoutY="161.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#yes" prefHeight="34.0" prefWidth="95.0" ripplerFill="SKYBLUE" style="-fx-background-color: #F0F0F0; -fx-border-color: #b8b8b8;" text="Add" AnchorPane.bottomAnchor="14.600000000000001" AnchorPane.leftAnchor="61.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="Segoe UI Light" size="15.0" />
+            </font>
+        </JFXButton>
+        <JFXTextField fx:id="friendUser" focusColor="SKYBLUE" layoutX="61.0" layoutY="98.0" prefHeight="31.0" prefWidth="257.0" promptText="Friend" unFocusColor="#23ae36" AnchorPane.bottomAnchor="80.8" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="61.39999999999998">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font>
+        </JFXTextField>
+        <JFXButton layoutX="233.0" layoutY="161.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#no" prefHeight="34.0" prefWidth="95.0" ripplerFill="SKYBLUE" style="-fx-background-color: #F0F0F0; -fx-border-color: #b8b8b8;" text="Close" AnchorPane.bottomAnchor="14.599999999999994" AnchorPane.rightAnchor="61.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="Segoe UI Light" size="15.0" />
+            </font>
+        </JFXButton>
+    </children>
+    <effect>
+        <DropShadow height="48.99" radius="15.4425" width="14.78" />
+    </effect>
+</AnchorPane>

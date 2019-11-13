@@ -1,0 +1,2297 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <database name="gogreendb">
+        <table_structure name="achievements">
+            <field Field="userid" Type="int(8)" Null="NO" Key="PRI" Extra="" Comment=""/>
+            <field Field="tree_hugger" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="anarcho_primitivist" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="celebi" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="stop_cheating" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="sun_absorber" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="power_plant" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="3_years_ago" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="time_traveler" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="vegetarian" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="vegan" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="photosynthesizer" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="please_eat" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="dutch" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="nice_legs_bro" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="teleporter" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="never_skip_leg_day" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="farmer" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="hydroponic" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="communist" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="mudanjiang" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="fat_wallet" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="retirement_fund" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="just_buy_something" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="nokwg29" Type="tinyint(1)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="level" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <key Table="achievements" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="userid"
+                 Collation="A" Cardinality="2" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES"/>
+            <options Name="achievements" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="2"
+                     Avg_row_length="8192" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0"
+                     Create_time="2019-03-14 18:48:52" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="achievements">
+            <row>
+                <field name="userid">9</field>
+                <field name="tree_hugger">0</field>
+                <field name="anarcho_primitivist">0</field>
+                <field name="celebi">0</field>
+                <field name="stop_cheating">0</field>
+                <field name="sun_absorber">0</field>
+                <field name="power_plant">0</field>
+                <field name="3_years_ago">0</field>
+                <field name="time_traveler">0</field>
+                <field name="vegetarian">0</field>
+                <field name="vegan">0</field>
+                <field name="photosynthesizer">0</field>
+                <field name="please_eat">0</field>
+                <field name="dutch">0</field>
+                <field name="nice_legs_bro">0</field>
+                <field name="teleporter">0</field>
+                <field name="never_skip_leg_day">0</field>
+                <field name="farmer">0</field>
+                <field name="hydroponic">0</field>
+                <field name="communist">0</field>
+                <field name="mudanjiang">0</field>
+                <field name="fat_wallet">0</field>
+                <field name="retirement_fund">0</field>
+                <field name="just_buy_something">0</field>
+                <field name="nokwg29">0</field>
+                <field name="level">0</field>
+            </row>
+            <row>
+                <field name="userid">10</field>
+                <field name="tree_hugger">1</field>
+                <field name="anarcho_primitivist">1</field>
+                <field name="celebi">1</field>
+                <field name="stop_cheating">1</field>
+                <field name="sun_absorber">0</field>
+                <field name="power_plant">0</field>
+                <field name="3_years_ago">0</field>
+                <field name="time_traveler">0</field>
+                <field name="vegetarian">1</field>
+                <field name="vegan">1</field>
+                <field name="photosynthesizer">1</field>
+                <field name="please_eat">0</field>
+                <field name="dutch">1</field>
+                <field name="nice_legs_bro">1</field>
+                <field name="teleporter">1</field>
+                <field name="never_skip_leg_day">1</field>
+                <field name="farmer">1</field>
+                <field name="hydroponic">1</field>
+                <field name="communist">1</field>
+                <field name="mudanjiang">1</field>
+                <field name="fat_wallet">1</field>
+                <field name="retirement_fund">1</field>
+                <field name="just_buy_something">1</field>
+                <field name="nokwg29">1</field>
+                <field name="level">2488.96</field>
+            </row>
+        </table_data>
+        <table_structure name="activity_food">
+            <field Field="item" Type="varchar(20)" Null="NO" Key="PRI" Extra="" Comment=""/>
+            <field Field="co2_1kg" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="price_1kg" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <key Table="activity_food" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="item"
+                 Collation="A" Cardinality="17" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES"/>
+            <options Name="activity_food" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="17"
+                     Avg_row_length="963" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0"
+                     Create_time="2019-03-12 18:55:41" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="activity_food">
+            <row>
+                <field name="item">beans</field>
+                <field name="co2_1kg">2</field>
+                <field name="price_1kg">4</field>
+            </row>
+            <row>
+                <field name="item">beef</field>
+                <field name="co2_1kg">27</field>
+                <field name="price_1kg">17</field>
+            </row>
+            <row>
+                <field name="item">cheese</field>
+                <field name="co2_1kg">14</field>
+                <field name="price_1kg">7</field>
+            </row>
+            <row>
+                <field name="item">chicken</field>
+                <field name="co2_1kg">7</field>
+                <field name="price_1kg">11</field>
+            </row>
+            <row>
+                <field name="item">eggs</field>
+                <field name="co2_1kg">5</field>
+                <field name="price_1kg">6</field>
+            </row>
+            <row>
+                <field name="item">fruit</field>
+                <field name="co2_1kg">1</field>
+                <field name="price_1kg">2</field>
+            </row>
+            <row>
+                <field name="item">lamb</field>
+                <field name="co2_1kg">39</field>
+                <field name="price_1kg">15</field>
+            </row>
+            <row>
+                <field name="item">lentils</field>
+                <field name="co2_1kg">1</field>
+                <field name="price_1kg">4</field>
+            </row>
+            <row>
+                <field name="item">milk</field>
+                <field name="co2_1kg">2</field>
+                <field name="price_1kg">1</field>
+            </row>
+            <row>
+                <field name="item">nuts</field>
+                <field name="co2_1kg">3</field>
+                <field name="price_1kg">13</field>
+            </row>
+            <row>
+                <field name="item">pork</field>
+                <field name="co2_1kg">12</field>
+                <field name="price_1kg">6</field>
+            </row>
+            <row>
+                <field name="item">potatoes</field>
+                <field name="co2_1kg">3</field>
+                <field name="price_1kg">1</field>
+            </row>
+            <row>
+                <field name="item">rice</field>
+                <field name="co2_1kg">3</field>
+                <field name="price_1kg">1</field>
+            </row>
+            <row>
+                <field name="item">tofu</field>
+                <field name="co2_1kg">2</field>
+                <field name="price_1kg">3</field>
+            </row>
+            <row>
+                <field name="item">tuna</field>
+                <field name="co2_1kg">6</field>
+                <field name="price_1kg">14</field>
+            </row>
+            <row>
+                <field name="item">turkey</field>
+                <field name="co2_1kg">11</field>
+                <field name="price_1kg">13</field>
+            </row>
+            <row>
+                <field name="item">vegetables</field>
+                <field name="co2_1kg">2</field>
+                <field name="price_1kg">4</field>
+            </row>
+        </table_data>
+        <table_structure name="activity_localproduce">
+            <field Field="name" Type="varchar(20)" Null="NO" Key="PRI" Extra="" Comment=""/>
+            <field Field="localvforeign_co2_ratio" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="co2_1kg" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="price_1kg" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <key Table="activity_localproduce" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="name"
+                 Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES"/>
+            <options Name="activity_localproduce" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="0"
+                     Avg_row_length="0" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0"
+                     Create_time="2019-03-13 00:28:15" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="activity_localproduce">
+            <row>
+                <field name="name">vegetables</field>
+                <field name="localvforeign_co2_ratio">0.1</field>
+                <field name="co2_1kg">2</field>
+                <field name="price_1kg">4</field>
+            </row>
+        </table_data>
+        <table_structure name="activity_solarpanels">
+            <field Field="activity_name" Type="varchar(20)" Null="NO" Key="PRI" Extra="" Comment=""/>
+            <field Field="kwh_day_produce" Type="float" Null="NO" Key="" Extra="" Comment=""/>
+            <key Table="activity_solarpanels" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1"
+                 Column_name="activity_name" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment=""
+                 Index_comment="" Visible="YES"/>
+            <options Name="activity_solarpanels" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="0"
+                     Avg_row_length="0" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0"
+                     Create_time="2019-03-12 16:34:50" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="activity_solarpanels">
+            <row>
+                <field name="activity_name">solarpanels</field>
+                <field name="kwh_day_produce">1</field>
+            </row>
+        </table_data>
+        <table_structure name="activity_temperature">
+            <field Field="activity_name" Type="varchar(20)" Null="NO" Key="PRI" Extra="" Comment=""/>
+            <field Field="saved_kwh_hour" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <key Table="activity_temperature" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1"
+                 Column_name="activity_name" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment=""
+                 Index_comment="" Visible="YES"/>
+            <options Name="activity_temperature" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="0"
+                     Avg_row_length="0" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0"
+                     Create_time="2019-03-12 23:51:50" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="activity_temperature">
+            <row>
+                <field name="activity_name">waterheater_off</field>
+                <field name="saved_kwh_hour">4</field>
+            </row>
+        </table_data>
+        <table_structure name="activity_transport">
+            <field Field="vehicle" Type="varchar(20)" Null="NO" Key="PRI" Extra="" Comment=""/>
+            <field Field="co2_10km" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="price_10km" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <key Table="activity_transport" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="vehicle"
+                 Collation="A" Cardinality="7" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES"/>
+            <options Name="activity_transport" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="7"
+                     Avg_row_length="2340" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0"
+                     Create_time="2019-03-12 22:10:28" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="activity_transport">
+            <row>
+                <field name="vehicle">bike</field>
+                <field name="co2_10km">0</field>
+                <field name="price_10km">0</field>
+            </row>
+            <row>
+                <field name="vehicle">bus</field>
+                <field name="co2_10km">0.7</field>
+                <field name="price_10km">0.58</field>
+            </row>
+            <row>
+                <field name="vehicle">car</field>
+                <field name="co2_10km">4</field>
+                <field name="price_10km">2</field>
+            </row>
+            <row>
+                <field name="vehicle">motorbike</field>
+                <field name="co2_10km">7</field>
+                <field name="price_10km">1</field>
+            </row>
+            <row>
+                <field name="vehicle">plane</field>
+                <field name="co2_10km">80</field>
+                <field name="price_10km">88</field>
+            </row>
+            <row>
+                <field name="vehicle">train</field>
+                <field name="co2_10km">0</field>
+                <field name="price_10km">2.03</field>
+            </row>
+            <row>
+                <field name="vehicle">walk</field>
+                <field name="co2_10km">0</field>
+                <field name="price_10km">0</field>
+            </row>
+        </table_data>
+        <table_structure name="constants">
+            <field Field="item" Type="varchar(20)" Null="NO" Key="PRI" Extra="" Comment=""/>
+            <field Field="unit" Type="varchar(10)" Null="NO" Key="" Extra="" Comment=""/>
+            <field Field="price_euros" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="co2" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <key Table="constants" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="item" Collation="A"
+                 Cardinality="1" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES"/>
+            <options Name="constants" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1" Avg_row_length="16384"
+                     Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0"
+                     Create_time="2019-03-12 16:30:43" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="constants">
+            <row>
+                <field name="item">electricity</field>
+                <field name="unit">kwh</field>
+                <field name="price_euros">0.17</field>
+                <field name="co2">0.397</field>
+            </row>
+        </table_data>
+        <table_structure name="friend_add">
+            <field Field="userid_1" Type="int(8)" Null="NO" Key="" Extra="" Comment=""/>
+            <field Field="userid_2" Type="int(8)" Null="NO" Key="" Extra="" Comment=""/>
+            <field Field="add_id" Type="int(20)" Null="NO" Key="PRI" Extra="auto_increment" Comment=""/>
+            <field Field="add_date" Type="datetime" Null="YES" Key="" Default="CURRENT_TIMESTAMP"
+                   Extra="DEFAULT_GENERATED" Comment=""/>
+            <key Table="friend_add" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="add_id"
+                 Collation="A" Cardinality="19" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES"/>
+            <options Name="friend_add" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="19" Avg_row_length="862"
+                     Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="34"
+                     Create_time="2019-03-13 14:08:07" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="friend_add">
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">1</field>
+                <field name="add_date">2019-03-13 15:54:33</field>
+            </row>
+            <row>
+                <field name="userid_1">7</field>
+                <field name="userid_2">6</field>
+                <field name="add_id">2</field>
+                <field name="add_date">2019-03-13 15:56:24</field>
+            </row>
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">8</field>
+                <field name="add_id">10</field>
+                <field name="add_date">2019-03-13 18:06:17</field>
+            </row>
+            <row>
+                <field name="userid_1">7</field>
+                <field name="userid_2">8</field>
+                <field name="add_id">11</field>
+                <field name="add_date">2019-03-13 18:07:58</field>
+            </row>
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">8</field>
+                <field name="add_id">12</field>
+                <field name="add_date">2019-03-13 18:08:28</field>
+            </row>
+            <row>
+                <field name="userid_1">7</field>
+                <field name="userid_2">6</field>
+                <field name="add_id">13</field>
+                <field name="add_date">2019-03-13 18:11:19</field>
+            </row>
+            <row>
+                <field name="userid_1">8</field>
+                <field name="userid_2">6</field>
+                <field name="add_id">15</field>
+                <field name="add_date">2019-03-13 18:16:12</field>
+            </row>
+            <row>
+                <field name="userid_1">8</field>
+                <field name="userid_2">6</field>
+                <field name="add_id">16</field>
+                <field name="add_date">2019-03-13 18:16:14</field>
+            </row>
+            <row>
+                <field name="userid_1">8</field>
+                <field name="userid_2">6</field>
+                <field name="add_id">17</field>
+                <field name="add_date">2019-03-13 18:16:14</field>
+            </row>
+            <row>
+                <field name="userid_1">8</field>
+                <field name="userid_2">8</field>
+                <field name="add_id">18</field>
+                <field name="add_date">2019-03-13 18:17:22</field>
+            </row>
+            <row>
+                <field name="userid_1">8</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">19</field>
+                <field name="add_date">2019-03-13 18:21:12</field>
+            </row>
+            <row>
+                <field name="userid_1">8</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">20</field>
+                <field name="add_date">2019-03-13 18:21:13</field>
+            </row>
+            <row>
+                <field name="userid_1">8</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">21</field>
+                <field name="add_date">2019-03-13 18:24:48</field>
+            </row>
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">22</field>
+                <field name="add_date">2019-03-13 18:25:01</field>
+            </row>
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">23</field>
+                <field name="add_date">2019-03-13 18:25:10</field>
+            </row>
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">24</field>
+                <field name="add_date">2019-03-13 18:25:12</field>
+            </row>
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">25</field>
+                <field name="add_date">2019-03-13 18:25:14</field>
+            </row>
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">26</field>
+                <field name="add_date">2019-03-13 18:25:15</field>
+            </row>
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">27</field>
+                <field name="add_date">2019-03-13 18:25:15</field>
+            </row>
+            <row>
+                <field name="userid_1">8</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">28</field>
+                <field name="add_date">2019-03-13 18:52:05</field>
+            </row>
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">29</field>
+                <field name="add_date">2019-03-13 18:53:22</field>
+            </row>
+            <row>
+                <field name="userid_1">8</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">30</field>
+                <field name="add_date">2019-03-13 18:58:05</field>
+            </row>
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">8</field>
+                <field name="add_id">31</field>
+                <field name="add_date">2019-03-13 19:03:05</field>
+            </row>
+            <row>
+                <field name="userid_1">6</field>
+                <field name="userid_2">8</field>
+                <field name="add_id">32</field>
+                <field name="add_date">2019-03-13 19:03:20</field>
+            </row>
+            <row>
+                <field name="userid_1">9</field>
+                <field name="userid_2">7</field>
+                <field name="add_id">33</field>
+                <field name="add_date">2019-03-14 20:12:08</field>
+            </row>
+        </table_data>
+        <triggers name="friend_add">
+            <trigger Trigger="friend_adder_user1"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 16:59:48.18">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `friend_adder_user1` AFTER INSERT ON `friend_add` FOR EACH ROW begin 
+if ((select friend_count from user where userid = new.userid_1) = 0) then update friend_list set friend1_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 1) then update friend_list set friend2_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 2) then update friend_list set friend3_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 3) then update friend_list set friend4_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 4) then update friend_list set friend5_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 5) then update friend_list set friend6_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 6) then update friend_list set friend7_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 7) then update friend_list set friend8_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 8) then update friend_list set friend9_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 9) then update friend_list set friend10_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 10) then update friend_list set friend11_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 11) then update friend_list set friend12_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 12) then update friend_list set friend13_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 13) then update friend_list set friend14_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 14) then update friend_list set friend15_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 15) then update friend_list set friend16_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 16) then update friend_list set friend17_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 17) then update friend_list set friend18_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 18) then update friend_list set friend19_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 19) then update friend_list set friend20_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 20) then update friend_list set friend21_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 21) then update friend_list set friend22_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 22) then update friend_list set friend23_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 23) then update friend_list set friend24_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+if ((select friend_count from user where userid = new.userid_1) = 24) then update friend_list set friend25_id = new.userid_2 where src_user_id = new.userid_1;
+end if;
+end
+]]>
+            </trigger>
+            <trigger Trigger="friend_adder_user2"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 18:07:43.79">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `friend_adder_user2` AFTER INSERT ON `friend_add` FOR EACH ROW begin 
+if ((select friend_count from user where userid = new.userid_2) = 0) then update friend_list set friend1_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 1) then update friend_list set friend2_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 2) then update friend_list set friend3_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 3) then update friend_list set friend4_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 4) then update friend_list set friend5_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 5) then update friend_list set friend6_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 6) then update friend_list set friend7_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 7) then update friend_list set friend8_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 8) then update friend_list set friend9_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 9) then update friend_list set friend10_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 10) then update friend_list set friend11_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 11) then update friend_list set friend12_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 12) then update friend_list set friend13_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 13) then update friend_list set friend14_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 14) then update friend_list set friend15_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 15) then update friend_list set friend16_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 16) then update friend_list set friend17_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 17) then update friend_list set friend18_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 18) then update friend_list set friend19_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 19) then update friend_list set friend20_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 20) then update friend_list set friend21_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 21) then update friend_list set friend22_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 22) then update friend_list set friend23_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 23) then update friend_list set friend24_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+if ((select friend_count from user where userid = new.userid_2) = 24) then update friend_list set friend25_id = new.userid_1 where src_user_id = new.userid_2;
+end if;
+end
+]]>
+            </trigger>
+            <trigger Trigger="friend_count_incrementer1"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 18:15:34.82">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `friend_count_incrementer1` AFTER INSERT ON `friend_add` FOR EACH ROW begin
+update user set friend_count = (friend_count + 1) where userid = new.userid_1;
+end
+]]>
+            </trigger>
+            <trigger Trigger="friend_count_incrementer2"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 18:15:52.36">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `friend_count_incrementer2` AFTER INSERT ON `friend_add` FOR EACH ROW begin update user set friend_count = (friend_count + 1) where userid = new.userid_2; end
+]]>
+            </trigger>
+        </triggers>
+        <table_structure name="friend_list">
+            <field Field="src_user_id" Type="int(8)" Null="NO" Key="PRI" Extra="" Comment=""/>
+            <field Field="friend1_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend2_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend3_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend4_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend5_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend6_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend7_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend8_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend9_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend10_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend11_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend12_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend13_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend14_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend15_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend16_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend17_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend18_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend19_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend20_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend21_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend22_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend23_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend24_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend25_id" Type="int(8)" Null="YES" Key="" Extra="" Comment=""/>
+            <key Table="friend_list" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="src_user_id"
+                 Collation="A" Cardinality="4" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES"/>
+            <options Name="friend_list" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="4" Avg_row_length="4096"
+                     Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0"
+                     Create_time="2019-03-13 14:36:46" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="friend_list">
+            <row>
+                <field name="src_user_id">7</field>
+                <field name="friend1_id">8</field>
+                <field name="friend2_id">8</field>
+                <field name="friend3_id">8</field>
+                <field name="friend4_id">6</field>
+                <field name="friend5_id">6</field>
+                <field name="friend6_id">6</field>
+                <field name="friend7_id">6</field>
+                <field name="friend8_id">6</field>
+                <field name="friend9_id">6</field>
+                <field name="friend10_id">8</field>
+                <field name="friend11_id">6</field>
+                <field name="friend12_id">8</field>
+                <field name="friend13_id">9</field>
+                <field name="friend14_id" xsi:nil="true"/>
+                <field name="friend15_id" xsi:nil="true"/>
+                <field name="friend16_id" xsi:nil="true"/>
+                <field name="friend17_id" xsi:nil="true"/>
+                <field name="friend18_id" xsi:nil="true"/>
+                <field name="friend19_id" xsi:nil="true"/>
+                <field name="friend20_id" xsi:nil="true"/>
+                <field name="friend21_id" xsi:nil="true"/>
+                <field name="friend22_id" xsi:nil="true"/>
+                <field name="friend23_id" xsi:nil="true"/>
+                <field name="friend24_id" xsi:nil="true"/>
+                <field name="friend25_id" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="src_user_id">8</field>
+                <field name="friend1_id">6</field>
+                <field name="friend2_id">6</field>
+                <field name="friend3_id">6</field>
+                <field name="friend4_id">8</field>
+                <field name="friend5_id" xsi:nil="true"/>
+                <field name="friend6_id">7</field>
+                <field name="friend7_id">7</field>
+                <field name="friend8_id">7</field>
+                <field name="friend9_id">7</field>
+                <field name="friend10_id">7</field>
+                <field name="friend11_id">6</field>
+                <field name="friend12_id">6</field>
+                <field name="friend13_id" xsi:nil="true"/>
+                <field name="friend14_id" xsi:nil="true"/>
+                <field name="friend15_id" xsi:nil="true"/>
+                <field name="friend16_id" xsi:nil="true"/>
+                <field name="friend17_id" xsi:nil="true"/>
+                <field name="friend18_id" xsi:nil="true"/>
+                <field name="friend19_id" xsi:nil="true"/>
+                <field name="friend20_id" xsi:nil="true"/>
+                <field name="friend21_id" xsi:nil="true"/>
+                <field name="friend22_id" xsi:nil="true"/>
+                <field name="friend23_id" xsi:nil="true"/>
+                <field name="friend24_id" xsi:nil="true"/>
+                <field name="friend25_id" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="src_user_id">9</field>
+                <field name="friend1_id">7</field>
+                <field name="friend2_id" xsi:nil="true"/>
+                <field name="friend3_id" xsi:nil="true"/>
+                <field name="friend4_id" xsi:nil="true"/>
+                <field name="friend5_id" xsi:nil="true"/>
+                <field name="friend6_id" xsi:nil="true"/>
+                <field name="friend7_id" xsi:nil="true"/>
+                <field name="friend8_id" xsi:nil="true"/>
+                <field name="friend9_id" xsi:nil="true"/>
+                <field name="friend10_id" xsi:nil="true"/>
+                <field name="friend11_id" xsi:nil="true"/>
+                <field name="friend12_id" xsi:nil="true"/>
+                <field name="friend13_id" xsi:nil="true"/>
+                <field name="friend14_id" xsi:nil="true"/>
+                <field name="friend15_id" xsi:nil="true"/>
+                <field name="friend16_id" xsi:nil="true"/>
+                <field name="friend17_id" xsi:nil="true"/>
+                <field name="friend18_id" xsi:nil="true"/>
+                <field name="friend19_id" xsi:nil="true"/>
+                <field name="friend20_id" xsi:nil="true"/>
+                <field name="friend21_id" xsi:nil="true"/>
+                <field name="friend22_id" xsi:nil="true"/>
+                <field name="friend23_id" xsi:nil="true"/>
+                <field name="friend24_id" xsi:nil="true"/>
+                <field name="friend25_id" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="src_user_id">10</field>
+                <field name="friend1_id" xsi:nil="true"/>
+                <field name="friend2_id" xsi:nil="true"/>
+                <field name="friend3_id" xsi:nil="true"/>
+                <field name="friend4_id" xsi:nil="true"/>
+                <field name="friend5_id" xsi:nil="true"/>
+                <field name="friend6_id" xsi:nil="true"/>
+                <field name="friend7_id" xsi:nil="true"/>
+                <field name="friend8_id" xsi:nil="true"/>
+                <field name="friend9_id" xsi:nil="true"/>
+                <field name="friend10_id" xsi:nil="true"/>
+                <field name="friend11_id" xsi:nil="true"/>
+                <field name="friend12_id" xsi:nil="true"/>
+                <field name="friend13_id" xsi:nil="true"/>
+                <field name="friend14_id" xsi:nil="true"/>
+                <field name="friend15_id" xsi:nil="true"/>
+                <field name="friend16_id" xsi:nil="true"/>
+                <field name="friend17_id" xsi:nil="true"/>
+                <field name="friend18_id" xsi:nil="true"/>
+                <field name="friend19_id" xsi:nil="true"/>
+                <field name="friend20_id" xsi:nil="true"/>
+                <field name="friend21_id" xsi:nil="true"/>
+                <field name="friend22_id" xsi:nil="true"/>
+                <field name="friend23_id" xsi:nil="true"/>
+                <field name="friend24_id" xsi:nil="true"/>
+                <field name="friend25_id" xsi:nil="true"/>
+            </row>
+        </table_data>
+        <table_structure name="insert_history">
+            <field Field="insertid" Type="int(40)" Null="NO" Key="PRI" Extra="auto_increment" Comment=""/>
+            <field Field="alternate_activity" Type="varchar(20)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="activity_name" Type="varchar(30)" Null="NO" Key="" Extra="" Comment=""/>
+            <field Field="date_of_insert" Type="datetime" Null="NO" Key="" Default="CURRENT_TIMESTAMP"
+                   Extra="DEFAULT_GENERATED" Comment=""/>
+            <field Field="userid" Type="int(11)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="activity_price" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="transport_distance_km" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="temperature_activity_duration_hours" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="alternate_activity_price" Type="float" Null="YES" Key="" Extra="" Comment=""/>
+            <key Table="insert_history" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="insertid"
+                 Collation="A" Cardinality="66" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES"/>
+            <options Name="insert_history" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="66"
+                     Avg_row_length="248" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0"
+                     Auto_increment="107" Create_time="2019-03-12 21:21:21" Collation="utf8mb4_0900_ai_ci"
+                     Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="insert_history">
+            <row>
+                <field name="insertid">37</field>
+                <field name="alternate_activity">beef</field>
+                <field name="activity_name">eggs</field>
+                <field name="date_of_insert">2019-03-12 22:54:34</field>
+                <field name="userid">6</field>
+                <field name="activity_price">6</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">17</field>
+            </row>
+            <row>
+                <field name="insertid">38</field>
+                <field name="alternate_activity">beef</field>
+                <field name="activity_name">eggs</field>
+                <field name="date_of_insert">2019-03-12 22:56:02</field>
+                <field name="userid">6</field>
+                <field name="activity_price">3</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">17</field>
+            </row>
+            <row>
+                <field name="insertid">39</field>
+                <field name="alternate_activity">beef</field>
+                <field name="activity_name">eggs</field>
+                <field name="date_of_insert">2019-03-12 23:03:31</field>
+                <field name="userid">6</field>
+                <field name="activity_price">3</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">17</field>
+            </row>
+            <row>
+                <field name="insertid">40</field>
+                <field name="alternate_activity">beef</field>
+                <field name="activity_name">eggs</field>
+                <field name="date_of_insert">2019-03-12 23:07:29</field>
+                <field name="userid">6</field>
+                <field name="activity_price">3</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">17</field>
+            </row>
+            <row>
+                <field name="insertid">41</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bus</field>
+                <field name="date_of_insert">2019-03-12 23:51:43</field>
+                <field name="userid" xsi:nil="true"/>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">10</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">42</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bus</field>
+                <field name="date_of_insert">2019-03-12 23:52:33</field>
+                <field name="userid">6</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">10</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">43</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bus</field>
+                <field name="date_of_insert">2019-03-12 23:57:51</field>
+                <field name="userid">6</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">10</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">44</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beef</field>
+                <field name="date_of_insert">2019-03-13 09:02:39</field>
+                <field name="userid">6</field>
+                <field name="activity_price">7</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">10</field>
+            </row>
+            <row>
+                <field name="insertid">45</field>
+                <field name="alternate_activity" xsi:nil="true"/>
+                <field name="activity_name">solarpanels</field>
+                <field name="date_of_insert">2019-03-13 09:03:59</field>
+                <field name="userid">6</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">46</field>
+                <field name="alternate_activity" xsi:nil="true"/>
+                <field name="activity_name">car</field>
+                <field name="date_of_insert">2019-03-13 19:05:13</field>
+                <field name="userid">6</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">47</field>
+                <field name="alternate_activity" xsi:nil="true"/>
+                <field name="activity_name">car</field>
+                <field name="date_of_insert">2019-03-14 18:20:45</field>
+                <field name="userid">6</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">48</field>
+                <field name="alternate_activity" xsi:nil="true"/>
+                <field name="activity_name">login</field>
+                <field name="date_of_insert">2019-03-14 18:50:58</field>
+                <field name="userid">6</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">49</field>
+                <field name="alternate_activity">beef</field>
+                <field name="activity_name">vegetables</field>
+                <field name="date_of_insert">2019-03-14 20:19:52</field>
+                <field name="userid">10</field>
+                <field name="activity_price">4</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">13</field>
+            </row>
+            <row>
+                <field name="insertid">50</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:27:31</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">51</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:27:39</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">52</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:27:41</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">53</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:27:42</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">54</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:27:42</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">55</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:27:44</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">56</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:00</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">57</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:01</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">58</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:01</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">59</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:01</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">60</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:02</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">61</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:02</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">62</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:02</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">63</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:02</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">64</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:02</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">65</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:03</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">66</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:03</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">67</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:03</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">68</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:03</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">69</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:03</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">70</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:04</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">71</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:04</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">72</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:04</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">73</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:04</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">74</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:04</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">75</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:05</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">76</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:05</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">77</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:05</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">78</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:06</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">79</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beans</field>
+                <field name="date_of_insert">2019-03-14 21:28:06</field>
+                <field name="userid">10</field>
+                <field name="activity_price">2</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price">49</field>
+            </row>
+            <row>
+                <field name="insertid">80</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:07</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">81</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:11</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">82</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:11</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">83</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:11</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">84</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:11</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">85</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:11</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">86</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:12</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">87</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:12</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">88</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:12</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">89</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:12</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">90</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:12</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">91</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:13</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">92</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:13</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">93</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:13</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">94</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:13</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">95</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:14</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">96</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:14</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">97</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:14</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">98</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:14</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">99</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:14</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">100</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:15</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">101</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:15</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">102</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:16</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">100</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">103</field>
+                <field name="alternate_activity">car</field>
+                <field name="activity_name">bike</field>
+                <field name="date_of_insert">2019-03-14 21:29:48</field>
+                <field name="userid">10</field>
+                <field name="activity_price" xsi:nil="true"/>
+                <field name="transport_distance_km">99999</field>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">104</field>
+                <field name="alternate_activity" xsi:nil="true"/>
+                <field name="activity_name">localproduce</field>
+                <field name="date_of_insert">2019-03-14 21:30:42</field>
+                <field name="userid">10</field>
+                <field name="activity_price">99</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">105</field>
+                <field name="alternate_activity" xsi:nil="true"/>
+                <field name="activity_name">localproduce</field>
+                <field name="date_of_insert">2019-03-14 21:31:13</field>
+                <field name="userid">10</field>
+                <field name="activity_price">9999</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+            <row>
+                <field name="insertid">106</field>
+                <field name="alternate_activity">lamb</field>
+                <field name="activity_name">beef</field>
+                <field name="date_of_insert">2019-03-16 09:46:00</field>
+                <field name="userid">6</field>
+                <field name="activity_price">7</field>
+                <field name="transport_distance_km" xsi:nil="true"/>
+                <field name="temperature_activity_duration_hours" xsi:nil="true"/>
+                <field name="alternate_activity_price" xsi:nil="true"/>
+            </row>
+        </table_data>
+        <triggers name="insert_history">
+            <trigger Trigger="added_solarpanels"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-12 18:52:45.21">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `added_solarpanels` AFTER INSERT ON `insert_history` FOR EACH ROW begin if new.activity_name = "solarpanels" then update user set has_solarpanels = 1 where userid = new.userid; end if; end
+]]>
+            </trigger>
+            <trigger Trigger="solarpanels_datetracker"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-12 19:50:42.52">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `solarpanels_datetracker` AFTER INSERT ON `insert_history` FOR EACH ROW begin
+if new.activity_name = "solarpanels" then
+update user set date_added_solarpanels = NOW()
+where userid = new.userid;
+end if;
+end
+]]>
+            </trigger>
+            <trigger Trigger="food_co2_savings_adder"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-12 22:51:45.86">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `food_co2_savings_adder` AFTER INSERT ON `insert_history` FOR EACH ROW begin if
+(
+(new.activity_name in (select item from activity_food))
+and
+(new.alternate_activity in (select item from activity_food))
+)
+then update records
+set saved_co2_food = 
+(saved_co2_food + ((new.alternate_activity_price)*((select co2_1kg from activity_food where item = new.alternate_activity)/(select price_1kg from activity_food where item = new.alternate_activity))) - ((new.activity_price)*((select co2_1kg from activity_food where item = new.activity_name)/(select price_1kg from activity_food where item = new.activity_name))))
+where userid = new.userid; end if; end
+]]>
+            </trigger>
+            <trigger Trigger="saved_price_food_adder"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-12 23:07:18.28">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `saved_price_food_adder` AFTER INSERT ON `insert_history` FOR EACH ROW begin if
+(
+(new.activity_name in (select item from activity_food))
+and
+(new.alternate_activity in (select item from activity_food))
+)
+then update records
+set saved_price_food = (saved_price_food + (new.alternate_activity_price - new.activity_price))
+where userid = new.userid; end if; end
+]]>
+            </trigger>
+            <trigger Trigger="saved_co2_transport_adder"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-12 23:50:03.94">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `saved_co2_transport_adder` AFTER INSERT ON `insert_history` FOR EACH ROW begin if
+(
+(new.activity_name in (select vehicle from activity_transport))
+and
+(new.alternate_activity in (select vehicle from activity_transport))
+and
+new.transport_distance_km > 0
+)
+then update records
+set saved_co2_transport = (saved_co2_transport + ((new.transport_distance_km)*(((select co2_10km from activity_transport where vehicle = new.alternate_activity) - (select co2_10km from activity_transport where vehicle = new.activity_name))/10)))
+where userid = new.userid;
+end if;
+end
+]]>
+            </trigger>
+            <trigger Trigger="saved_price_transport_adder"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-12 23:57:43.60">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `saved_price_transport_adder` AFTER INSERT ON `insert_history` FOR EACH ROW begin if
+(
+(new.activity_name in (select vehicle from activity_transport))
+and
+(new.alternate_activity in (select vehicle from activity_transport))
+and
+new.transport_distance_km > 0
+)
+then update records
+set saved_price_transport = (saved_price_transport + ((new.transport_distance_km)*(((select price_10km from activity_transport where vehicle = new.alternate_activity) - (select price_10km from activity_transport where vehicle = new.activity_name))/10)))
+where userid = new.userid;
+end if;
+end
+]]>
+            </trigger>
+            <trigger Trigger="kwh_produced_solarpanels_updater"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 00:26:49.61">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `kwh_produced_solarpanels_updater` AFTER INSERT ON `insert_history` FOR EACH ROW begin if ((select has_solarpanels from user where userid = new.userid) = 1) then update records set kwh_produced_solarpanels = (timestampdiff(day, (select date_added_solarpanels from user where userid = new.userid), now())) where userid = new.userid; end if; end
+]]>
+            </trigger>
+            <trigger Trigger="saved_co2_solarpanels_updater"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 00:45:04.19">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `saved_co2_solarpanels_updater` AFTER INSERT ON `insert_history` FOR EACH ROW begin if ((select has_solarpanels from user where userid = new.userid) = 1) then update records set saved_co2_solarpanels = ((timestampdiff(day, (select date_added_solarpanels from user where userid = new.userid), now()))*0.397) where userid = new.userid; end if; end
+]]>
+            </trigger>
+            <trigger Trigger="saved_price_solarpanels_updater"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 00:45:44.60">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `saved_price_solarpanels_updater` AFTER INSERT ON `insert_history` FOR EACH ROW begin if ((select has_solarpanels from user where userid = new.userid) = 1) then update records set saved_price_solarpanels = ((timestampdiff(day, (select date_added_solarpanels from user where userid = new.userid), now()))*0.17) where userid = new.userid; end if; end
+]]>
+            </trigger>
+            <trigger Trigger="saved_co2_temperature_adder"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 01:03:50.59">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `saved_co2_temperature_adder` AFTER INSERT ON `insert_history` FOR EACH ROW begin if
+((new.activity_name = 'waterheater_off')
+and
+(new.temperature_activity_duration_hours > 0))
+then
+update records set saved_co2_temperature = (saved_co2_temperature + (0.397*4*(new.temperature_activity_duration_hours)))
+where userid = new.userid;
+end if;
+end
+]]>
+            </trigger>
+            <trigger Trigger="saved_price_temperature_adder"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 01:05:10.45">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `saved_price_temperature_adder` AFTER INSERT ON `insert_history` FOR EACH ROW begin if ((new.activity_name = 'waterheater_off') and (new.temperature_activity_duration_hours > 0)) then update records set saved_price_temperature = (saved_price_temperature + (0.17*4*(new.temperature_activity_duration_hours))) where userid = new.userid; end if; end
+]]>
+            </trigger>
+            <trigger Trigger="localproduce_co2_savings_adder"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 01:39:35.78">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `localproduce_co2_savings_adder` AFTER INSERT ON `insert_history` FOR EACH ROW begin if ((new.activity_name = 'localproduce') and (new.activity_price > 0)) then update records set saved_co2_localproduce = (saved_co2_localproduce + (2*(new.activity_price)/4)) where userid = new.userid; end if; end
+]]>
+            </trigger>
+            <trigger Trigger="total_co2_savings_adder"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 01:42:44.65">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `total_co2_savings_adder` AFTER INSERT ON `insert_history` FOR EACH ROW begin
+update records
+set saved_co2_total = (saved_co2_food + saved_co2_transport + saved_co2_temperature + saved_co2_localproduce + saved_co2_solarpanels)
+where userid = new.userid;
+end
+]]>
+            </trigger>
+            <trigger Trigger="total_price_savings_adder"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 01:43:59.87">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `total_price_savings_adder` AFTER INSERT ON `insert_history` FOR EACH ROW begin update records set saved_price_total = (saved_price_food + saved_price_transport + saved_price_temperature + saved_price_solarpanels) where userid = new.userid; end
+]]>
+            </trigger>
+            <trigger Trigger="level_updater"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:18:09.27">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `level_updater` AFTER INSERT ON `insert_history` FOR EACH ROW begin
+update achievements set level = ((select saved_co2_total from records where userid = new.userid)/20)
+where userid = new.userid;
+end
+]]>
+            </trigger>
+            <trigger Trigger="sun_absorber_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:40:47.11">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `sun_absorber_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select kwh_produced_solarpanels from records where userid = new.userid) > 10)
+then
+update achievements set sun_absorber = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="power_plant_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:41:40.56">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `power_plant_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select kwh_produced_solarpanels from records where userid = new.userid) > 100)
+then
+update achievements set power_plant = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="3_years_ago_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:42:23.06">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `3_years_ago_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select kwh_produced_solarpanels from records where userid = new.userid) > 1095)
+then
+update achievements set 3_years_ago = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="time_traveler_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:44:12.59">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `time_traveler_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select kwh_produced_solarpanels from records where userid = new.userid) > 5000)
+then
+update achievements set time_traveler = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="tree_hugger_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:50:31.73">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `tree_hugger_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_total from records where userid = new.userid) > 100)
+then
+update achievements set tree_hugger = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="anarcho_primitivist_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:51:05.15">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `anarcho_primitivist_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_total from records where userid = new.userid) > 1000)
+then
+update achievements set anarcho_primitivist = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="celebi_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:51:28.35">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `celebi_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_total from records where userid = new.userid) > 5000)
+then
+update achievements set celebi = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="stop_cheating_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:52:52.25">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `stop_cheating_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_total from records where userid = new.userid) > 20000)
+then
+update achievements set stop_cheating = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="vegetarian_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:54:32.91">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `vegetarian_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_food from records where userid = new.userid) > 100)
+then
+update achievements set vegetarian = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="vegan_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:54:55.41">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `vegan_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_food from records where userid = new.userid) > 500)
+then
+update achievements set vegan = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="photosynthesizer_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:55:44.59">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `photosynthesizer_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_food from records where userid = new.userid) > 1000)
+then
+update achievements set photosynthesizer = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="please_eat_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:57:03.78">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `please_eat_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_food from records where userid = new.userid) > 5000)
+then
+update achievements set please_eat = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="dutch_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:57:46.81">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `dutch_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_transport from records where userid = new.userid) > 50)
+then
+update achievements set dutch = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="nice_legs_bro_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:58:31.99">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `nice_legs_bro_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_transport from records where userid = new.userid) > 100)
+then
+update achievements set nice_legs_bro = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="teleporter_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:59:00.27">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `teleporter_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_transport from records where userid = new.userid) > 1000)
+then
+update achievements set teleporter = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="never_skip_leg_day_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 21:01:00.25">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `never_skip_leg_day_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_transport from records where userid = new.userid) > 5000)
+then
+update achievements set never_skip_leg_day = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="farmer_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 21:01:46.01">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `farmer_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_localproduce from records where userid = new.userid) > 20)
+then
+update achievements set farmer = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="hydroponic_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 21:02:17.29">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `hydroponic_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_localproduce from records where userid = new.userid) > 100)
+then
+update achievements set hydroponic = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="communist_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 21:02:52.24">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `communist_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_localproduce from records where userid = new.userid) > 500)
+then
+update achievements set communist = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="mudanjiang_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 21:03:17.35">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `mudanjiang_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_co2_localproduce from records where userid = new.userid) > 2000)
+then
+update achievements set mudanjiang = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="fat_wallet_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 21:04:01.13">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `fat_wallet_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_price_total from records where userid = new.userid) > 100)
+then
+update achievements set fat_wallet = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="retirement_fund_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 21:04:41.04">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `retirement_fund_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_price_total from records where userid = new.userid) > 500)
+then
+update achievements set retirement_fund = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="just_buy_something_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 21:05:19.10">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `just_buy_something_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_price_total from records where userid = new.userid) > 2000)
+then
+update achievements set just_buy_something = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+            <trigger Trigger="nokwg29_achieve"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 21:05:54.18">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `nokwg29_achieve` AFTER INSERT ON `insert_history` FOR EACH ROW begin 
+if
+((select saved_price_total from records where userid = new.userid) > 10000)
+then
+update achievements set nokwg29 = 1 where userid = new.userid;
+End if;
+End
+]]>
+            </trigger>
+        </triggers>
+        <table_structure name="records">
+            <field Field="userid" Type="int(11)" Null="NO" Key="PRI" Extra="" Comment=""/>
+            <field Field="kwh_produced_solarpanels" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="saved_co2_food" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="saved_co2_total" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="saved_price_food" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="saved_price_total" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="saved_co2_transport" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="saved_price_transport" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="saved_co2_solarpanels" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="saved_co2_temperature" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="saved_co2_localproduce" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="saved_price_solarpanels" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="saved_price_temperature" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="kwh_saved_temperature" Type="float" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <key Table="records" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="userid" Collation="A"
+                 Cardinality="5" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES"/>
+            <options Name="records" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="5" Avg_row_length="3276"
+                     Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0"
+                     Create_time="2019-03-13 00:24:45" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="records">
+            <row>
+                <field name="userid">6</field>
+                <field name="kwh_produced_solarpanels">3</field>
+                <field name="saved_co2_food" xsi:nil="true"/>
+                <field name="saved_co2_total" xsi:nil="true"/>
+                <field name="saved_price_food" xsi:nil="true"/>
+                <field name="saved_price_total" xsi:nil="true"/>
+                <field name="saved_co2_transport">6.6</field>
+                <field name="saved_price_transport">1.42</field>
+                <field name="saved_co2_solarpanels">1.191</field>
+                <field name="saved_co2_temperature">0</field>
+                <field name="saved_co2_localproduce">0</field>
+                <field name="saved_price_solarpanels">0.51</field>
+                <field name="saved_price_temperature">0</field>
+                <field name="kwh_saved_temperature">0</field>
+            </row>
+            <row>
+                <field name="userid">7</field>
+                <field name="kwh_produced_solarpanels">0</field>
+                <field name="saved_co2_food">7</field>
+                <field name="saved_co2_total">0</field>
+                <field name="saved_price_food">0</field>
+                <field name="saved_price_total">0</field>
+                <field name="saved_co2_transport">0</field>
+                <field name="saved_price_transport">0</field>
+                <field name="saved_co2_solarpanels">0</field>
+                <field name="saved_co2_temperature">0</field>
+                <field name="saved_co2_localproduce">0</field>
+                <field name="saved_price_solarpanels">0</field>
+                <field name="saved_price_temperature">0</field>
+                <field name="kwh_saved_temperature">0</field>
+            </row>
+            <row>
+                <field name="userid">8</field>
+                <field name="kwh_produced_solarpanels">0</field>
+                <field name="saved_co2_food">0</field>
+                <field name="saved_co2_total">0</field>
+                <field name="saved_price_food">0</field>
+                <field name="saved_price_total">0</field>
+                <field name="saved_co2_transport">0</field>
+                <field name="saved_price_transport">0</field>
+                <field name="saved_co2_solarpanels">0</field>
+                <field name="saved_co2_temperature">0</field>
+                <field name="saved_co2_localproduce">0</field>
+                <field name="saved_price_solarpanels">0</field>
+                <field name="saved_price_temperature">0</field>
+                <field name="kwh_saved_temperature">0</field>
+            </row>
+            <row>
+                <field name="userid">9</field>
+                <field name="kwh_produced_solarpanels">0</field>
+                <field name="saved_co2_food">0</field>
+                <field name="saved_co2_total">0</field>
+                <field name="saved_price_food">0</field>
+                <field name="saved_price_total">0</field>
+                <field name="saved_co2_transport">0</field>
+                <field name="saved_price_transport">0</field>
+                <field name="saved_co2_solarpanels">0</field>
+                <field name="saved_co2_temperature">0</field>
+                <field name="saved_co2_localproduce">0</field>
+                <field name="saved_price_solarpanels">0</field>
+                <field name="saved_price_temperature">0</field>
+                <field name="kwh_saved_temperature">0</field>
+            </row>
+            <row>
+                <field name="userid">10</field>
+                <field name="kwh_produced_solarpanels">0</field>
+                <field name="saved_co2_food">3810.65</field>
+                <field name="saved_co2_total">49779.2</field>
+                <field name="saved_price_food">1419</field>
+                <field name="saved_price_total">21878.8</field>
+                <field name="saved_co2_transport">40919.6</field>
+                <field name="saved_price_transport">20459.8</field>
+                <field name="saved_co2_solarpanels">0</field>
+                <field name="saved_co2_temperature">0</field>
+                <field name="saved_co2_localproduce">5049</field>
+                <field name="saved_price_solarpanels">0</field>
+                <field name="saved_price_temperature">0</field>
+                <field name="kwh_saved_temperature">0</field>
+            </row>
+        </table_data>
+        <table_structure name="user">
+            <field Field="userid" Type="int(8)" Null="NO" Key="PRI" Extra="auto_increment" Comment=""/>
+            <field Field="password" Type="varchar(20)" Null="NO" Key="" Extra="" Comment=""/>
+            <field Field="bdate" Type="date" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="email" Type="varchar(30)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="nationality" Type="varchar(20)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="username" Type="varchar(30)" Null="NO" Key="UNI" Extra="" Comment=""/>
+            <field Field="firstname" Type="varchar(20)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="lastname" Type="varchar(30)" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="has_solarpanels" Type="tinyint(1)" Null="NO" Key="" Default="0" Extra="" Comment=""/>
+            <field Field="date_created" Type="datetime" Null="NO" Key="" Default="CURRENT_TIMESTAMP"
+                   Extra="DEFAULT_GENERATED" Comment=""/>
+            <field Field="date_added_solarpanels" Type="datetime" Null="YES" Key="" Extra="" Comment=""/>
+            <field Field="friend_count" Type="int(12)" Null="YES" Key="" Default="0" Extra="" Comment=""/>
+            <key Table="user" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="userid" Collation="A"
+                 Cardinality="5" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES"/>
+            <key Table="user" Non_unique="0" Key_name="username" Seq_in_index="1" Column_name="username" Collation="A"
+                 Cardinality="5" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES"/>
+            <options Name="user" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="5" Avg_row_length="3276"
+                     Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="11"
+                     Create_time="2019-03-13 14:43:58" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment=""/>
+        </table_structure>
+        <table_data name="user">
+            <row>
+                <field name="userid">6</field>
+                <field name="password">passtrial</field>
+                <field name="bdate">2000-11-07</field>
+                <field name="email" xsi:nil="true"/>
+                <field name="nationality">polish</field>
+                <field name="username">salt</field>
+                <field name="firstname">michal</field>
+                <field name="lastname">kijanski</field>
+                <field name="has_solarpanels">1</field>
+                <field name="date_created">2019-03-12 22:20:02</field>
+                <field name="date_added_solarpanels">2019-03-13 09:03:59</field>
+                <field name="friend_count">12</field>
+            </row>
+            <row>
+                <field name="userid">7</field>
+                <field name="password">basket</field>
+                <field name="bdate" xsi:nil="true"/>
+                <field name="email" xsi:nil="true"/>
+                <field name="nationality" xsi:nil="true"/>
+                <field name="username">friendtrial</field>
+                <field name="firstname" xsi:nil="true"/>
+                <field name="lastname" xsi:nil="true"/>
+                <field name="has_solarpanels">0</field>
+                <field name="date_created">2019-03-13 15:41:48</field>
+                <field name="date_added_solarpanels" xsi:nil="true"/>
+                <field name="friend_count">13</field>
+            </row>
+            <row>
+                <field name="userid">8</field>
+                <field name="password">swag</field>
+                <field name="bdate" xsi:nil="true"/>
+                <field name="email" xsi:nil="true"/>
+                <field name="nationality" xsi:nil="true"/>
+                <field name="username">pedro</field>
+                <field name="firstname" xsi:nil="true"/>
+                <field name="lastname" xsi:nil="true"/>
+                <field name="has_solarpanels">0</field>
+                <field name="date_created">2019-03-13 17:55:22</field>
+                <field name="date_added_solarpanels" xsi:nil="true"/>
+                <field name="friend_count">12</field>
+            </row>
+            <row>
+                <field name="userid">9</field>
+                <field name="password">fuck</field>
+                <field name="bdate" xsi:nil="true"/>
+                <field name="email" xsi:nil="true"/>
+                <field name="nationality" xsi:nil="true"/>
+                <field name="username">cunt</field>
+                <field name="firstname" xsi:nil="true"/>
+                <field name="lastname" xsi:nil="true"/>
+                <field name="has_solarpanels">0</field>
+                <field name="date_created">2019-03-14 20:10:47</field>
+                <field name="date_added_solarpanels" xsi:nil="true"/>
+                <field name="friend_count">1</field>
+            </row>
+            <row>
+                <field name="userid">10</field>
+                <field name="password">korea</field>
+                <field name="bdate" xsi:nil="true"/>
+                <field name="email" xsi:nil="true"/>
+                <field name="nationality" xsi:nil="true"/>
+                <field name="username">sung</field>
+                <field name="firstname" xsi:nil="true"/>
+                <field name="lastname" xsi:nil="true"/>
+                <field name="has_solarpanels">0</field>
+                <field name="date_created">2019-03-14 20:18:38</field>
+                <field name="date_added_solarpanels" xsi:nil="true"/>
+                <field name="friend_count">0</field>
+            </row>
+        </table_data>
+        <triggers name="user">
+            <trigger Trigger="new_record_create"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-12 16:25:09.49">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `new_record_create` AFTER INSERT ON `user` FOR EACH ROW begin
+insert into records(userid) values(new.userid);
+end
+]]>
+            </trigger>
+            <trigger Trigger="new_friendlist_create"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-13 15:40:01.36">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `new_friendlist_create` AFTER INSERT ON `user` FOR EACH ROW begin
+insert into friend_list(src_user_id) values(new.userid);
+end
+]]>
+            </trigger>
+            <trigger Trigger="new_achievements_create"
+                     sql_mode="ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+                     character_set_client="utf8mb4" collation_connection="utf8mb4_0900_ai_ci"
+                     Database_Collation="utf8mb4_0900_ai_ci" Created="2019-03-14 20:10:27.79">
+                <![CDATA[
+CREATE DEFINER=`root`@`localhost` TRIGGER `new_achievements_create` AFTER INSERT ON `user` FOR EACH ROW begin
+insert into achievements(userid) values(new.userid);
+end
+]]>
+            </trigger>
+        </triggers>
+    </database>
+</mysqldump>

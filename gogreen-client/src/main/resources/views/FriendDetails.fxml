@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gogreenclient.screens.FriendDetailsController">
+    <children>
+        <AnchorPane maxHeight="-Infinity" prefHeight="57.0" prefWidth="659.0" style="-fx-background-color: #029759;" VBox.vgrow="ALWAYS">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="-1.0" prefHeight="74.0" prefWidth="274.0" text="Friend's Statistics" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="192.0" AnchorPane.rightAnchor="193.0">
+                    <font>
+                        <Font name="Segoe UI Light" size="38.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="659.0" style="-fx-background-color: #F8F8F8;" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox layoutX="34.0" layoutY="23.0" AnchorPane.bottomAnchor="16.19999999999999" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="23.0">
+                    <children>
+                        <VBox prefHeight="234.0" prefWidth="198.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Label text="Username:">
+                                    <font>
+                                        <Font name="Segoe UI Light" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="setFriendUser" prefHeight="38.0" prefWidth="106.0" text="setFriendUser" textFill="SKYBLUE">
+                                    <font>
+                                        <Font name="Segoe UI Light" size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets bottom="10.0" />
+                                    </padding>
+                                </Label>
+                                <Label text="Total green activities:" VBox.vgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Segoe UI Light" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="setTotalAct" prefHeight="27.0" prefWidth="85.0" text="setTotalAct" textFill="#029759" VBox.vgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Segoe UI Light" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="GoGreener days:" VBox.vgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Segoe UI Light" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="setTotalDays" prefHeight="27.0" prefWidth="100.0" text="setTotalDays" textFill="#029759" VBox.vgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Segoe UI Light" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Total green achievements:" VBox.vgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Segoe UI Light" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="setTotalAchievements" prefHeight="27.0" prefWidth="169.0" text="setTotalAchievements" textFill="#029759" VBox.vgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Segoe UI Light" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="10.0" />
+                            </VBox.margin>
+                        </VBox>
+                        <JFXButton maxHeight="-Infinity" maxWidth="-Infinity" onAction="#yes" prefHeight="42.0" prefWidth="198.0" ripplerFill="SKYBLUE" style="-fx-background-color: #F0F0F0; -fx-border-color: #b8b8b8;" text="Close" VBox.vgrow="ALWAYS">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <font>
+                                <Font name="Segoe UI Light" size="15.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </VBox>
+                <PieChart fx:id="pieChart" layoutX="254.0" layoutY="16.0" prefHeight="293.0" prefWidth="390.0" stylesheets="@../static/pieChart.css" title="Saving contribution" AnchorPane.bottomAnchor="16.799999999999955" AnchorPane.leftAnchor="254.0" AnchorPane.rightAnchor="14.800000000000068" AnchorPane.topAnchor="16.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

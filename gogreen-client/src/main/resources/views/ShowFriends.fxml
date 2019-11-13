@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="918.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gogreenclient.screens.ShowFriendsController">
+    <children>
+        <AnchorPane prefHeight="588.0" prefWidth="210.0" style="-fx-background-color: #00AB66;">
+            <children>
+                <ImageView fitHeight="82.0" fitWidth="77.0" layoutX="73.0" layoutY="20.0" onMouseClicked="#switchStatistics" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="72.4" AnchorPane.topAnchor="20.0">
+                    <image>
+                        <Image url="@../static/gg3.png" />
+                    </image>
+                    <effect>
+                        <ColorAdjust brightness="1.0" />
+                    </effect>
+                </ImageView>
+                <GridPane layoutY="104.0" prefHeight="485.0" prefWidth="222.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="104.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.5999755859375" minWidth="0.0" prefWidth="0.0" />
+                        <ColumnConstraints hgrow="ALWAYS" maxWidth="221.0" minWidth="10.0" prefWidth="221.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                    </rowConstraints>
+                    <children>
+                        <JFXButton onAction="#closeProgram" prefHeight="473.0" prefWidth="222.0" styleClass="button1" stylesheets="@../static/hover.css" text="Exit" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Segoe UI Light" size="26.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="fas-window-close" iconSize="35" selectionFill="#00ff2b" />
+                            </graphic>
+                            <ripplerFill>
+                                <RadialGradient centerX="0.5466666486528184" centerY="0.5229007633587786" radius="0.5">
+                                    <stops>
+                                        <Stop color="#e80707" />
+                                        <Stop color="#eb8888" offset="1.0" />
+                                    </stops>
+                                </RadialGradient>
+                            </ripplerFill>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="12.0" onAction="#switchStatistics" prefHeight="177.0" prefWidth="308.0" ripplerFill="SKYBLUE" stylesheets="@../static/hover.css" text="Show statistics" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Segoe UI Light" size="24.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="far-chart-bar" iconSize="35" selectionFill="#00ff2b" />
+                            </graphic>
+                            <padding>
+                                <Insets bottom="1.0" top="1.0" />
+                            </padding>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="12.0" prefHeight="143.0" prefWidth="263.0" ripplerFill="SKYBLUE" style="-fx-background-color: #4682B4;" text="Show friends" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Segoe UI Light" size="24.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="fas-users" iconSize="35" selectionFill="#00ff2b" />
+                            </graphic>
+                            <padding>
+                                <Insets bottom="1.0" top="1.0" />
+                            </padding>
+                        </JFXButton>
+                        <JFXButton onAction="#addActivity" prefHeight="156.0" prefWidth="222.0" ripplerFill="SKYBLUE" stylesheets="@../static/hover.css" text="Add new green activity" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Segoe UI Light" size="23.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="fas-plus" iconSize="35" selectionFill="#00ff2b" />
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#switchAchievements" prefHeight="400.0" prefWidth="222.0" ripplerFill="SKYBLUE" stylesheets="@../static/hover.css" text="See all achivements" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Segoe UI Light" size="24.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="far-check-circle" iconSize="35" selectionFill="#00ff2b" />
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </GridPane>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+        <AnchorPane prefHeight="587.0" prefWidth="702.0" HBox.hgrow="ALWAYS">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="265.0" layoutY="14.0" prefHeight="71.0" prefWidth="214.0" text="Friend List" textFill="#00ab66" AnchorPane.leftAnchor="265.0" AnchorPane.rightAnchor="217.0">
+                    <font>
+                        <Font name="Segoe UI Light" size="49.0" />
+                    </font>
+                </Label>
+                <HBox layoutX="33.0" layoutY="533.0" prefHeight="30.0" prefWidth="214.0" spacing="7.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="33.0">
+                    <children>
+                        <Label text="Total Friends:" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Segoe UI Light" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="totalFriends" prefHeight="30.0" prefWidth="94.0" text="setTotalFriends" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Segoe UI Light" size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </HBox>
+                <JFXTreeTableView fx:id="treeView" layoutX="56.0" layoutY="98.0" prefHeight="410.0" prefWidth="600.0" AnchorPane.bottomAnchor="78.80000000000007" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="98.0" />
+                <JFXTextField fx:id="input" focusColor="SKYBLUE" layoutX="256.0" layoutY="535.0" prefHeight="26.0" prefWidth="170.0" promptText="Name of the friend" unFocusColor="#00ab66" AnchorPane.bottomAnchor="25.800000000000068" AnchorPane.leftAnchor="256.0" />
+                <JFXButton alignment="CENTER" graphicTextGap="10.0" layoutX="571.0" layoutY="517.0" minHeight="-Infinity" onAction="#switchAddFriend" prefHeight="62.0" prefWidth="110.0" ripplerFill="SKYBLUE" stylesheets="@../static/hover.css" text="Add a friend" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" AnchorPane.bottomAnchor="7.800000000000047" AnchorPane.rightAnchor="14.599999999999994">
+                    <font>
+                        <Font name="Segoe UI Light" size="16.0" />
+                    </font>
+                    <graphic>
+                        <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="fas-user-plus" iconSize="20" selectionFill="#00ff2b" wrappingWidth="18.625" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton alignment="CENTER" graphicTextGap="10.0" layoutX="446.0" layoutY="517.0" minHeight="-Infinity" onAction="#showDetails" prefHeight="62.0" prefWidth="110.0" ripplerFill="SKYBLUE" stylesheets="@../static/hover.css" text="Show details" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" AnchorPane.bottomAnchor="7.800000000000068" AnchorPane.rightAnchor="139.60000000000002">
+                    <font>
+                        <Font name="Segoe UI Light" size="16.0" />
+                    </font>
+                    <graphic>
+                        <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="fas-list-ul" iconSize="20" selectionFill="#00ff2b" wrappingWidth="18.625" />
+                    </graphic>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gogreenclient.screens.PlantTreeController">
+    <children>
+        <AnchorPane prefHeight="444.0" prefWidth="182.0" style="-fx-background-color: #00AB66;" HBox.hgrow="NEVER">
+            <children>
+                <GridPane layoutY="94.0" prefHeight="353.0" prefWidth="196.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.topAnchor="94.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.5999755859375" minWidth="0.0" prefWidth="0.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="230.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <JFXButton graphicTextGap="15.0" onAction="#switchFood" prefHeight="71.0" prefWidth="243.0" ripplerFill="SKYBLUE" text="Food related action" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1">
+                            <font>
+                                <Font name="Segoe UI Light" size="19.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconColor="#eaeaea" iconLiteral="fas-utensils" iconSize="24" strokeMiterLimit="15.0" />
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="15.0" onAction="#switchTransport" prefHeight="74.0" prefWidth="230.0" ripplerFill="SKYBLUE" text="Transport related action" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Segoe UI Light" size="18.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconColor="#eaeaea" iconLiteral="fas-bicycle" iconSize="24" strokeMiterLimit="15.0" />
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="12.0" onAction="#switchSolar" prefHeight="68.0" prefWidth="230.0" ripplerFill="SKYBLUE" text="Add a solar panel" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Segoe UI Light" size="18.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconColor="#eaeaea" iconLiteral="far-sun" iconSize="24" strokeMiterLimit="15.0" />
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="0.0" onAction="#switchRoom" prefHeight="67.0" prefWidth="230.0" ripplerFill="SKYBLUE" text="Adjust a room temperature" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Segoe UI Light" size="18.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconColor="#eaeaea" iconLiteral="fas-thermometer-half" iconSize="26" strokeMiterLimit="15.0" />
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="20.0" prefHeight="79.0" prefWidth="206.0" ripplerFill="SKYBLUE" style="-fx-background-color: #4682B4;" text="Plant a tree" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Segoe UI Light" size="19.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon iconColor="#eaeaea" iconLiteral="fas-tree" iconSize="24" strokeMiterLimit="15.0" />
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </GridPane>
+                <Label prefHeight="100.0" prefWidth="196.0" text="Green activities" textAlignment="CENTER" textFill="#eaeaea" wrapText="true">
+                    <font>
+                        <Font name="Segoe UI Light" size="32.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="444.0" prefWidth="462.0" style="-fx-background-color: #ffffffff;" HBox.hgrow="ALWAYS">
+            <children>
+                <VBox layoutX="22.0" layoutY="222.0" prefHeight="113.0" prefWidth="404.0" AnchorPane.bottomAnchor="109.0" AnchorPane.topAnchor="222.0">
+                    <children>
+                        <HBox prefHeight="58.0" prefWidth="404.0" spacing="12.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Label prefHeight="65.0" prefWidth="190.0" text="Type of tree that you have planted:" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Century Gothic" size="15.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets right="3.0" />
+                                    </padding>
+                                </Label>
+                                <JFXComboBox id="takenMeal_Box" fx:id="plantedTree" focusColor="TOMATO" prefHeight="31.0" prefWidth="206.0" promptText="Tree species" unFocusColor="#23ae36" HBox.hgrow="ALWAYS">
+                                    <HBox.margin>
+                                        <Insets top="15.0" />
+                                    </HBox.margin>
+                                </JFXComboBox>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="22.0" prefWidth="404.0" spacing="12.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Label prefHeight="26.0" prefWidth="49.0" text="Date:" textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Century Gothic" size="16.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets top="5.0" />
+                                    </padding>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </Label>
+                                <JFXDatePicker fx:id="plantDate" defaultColor="#00ab66" prefHeight="28.0" prefWidth="210.0" HBox.hgrow="ALWAYS" />
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="100.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="14.0" prefHeight="51.0" prefWidth="169.0" text="Plant a tree" textFill="#00ab66" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="137.0">
+                    <font>
+                        <Font name="Segoe UI Light" size="35.0" />
+                    </font>
+                </Label>
+                <JFXButton buttonType="RAISED" layoutX="159.0" layoutY="371.0" onAction="#submit" prefHeight="58.0" prefWidth="186.0" ripplerFill="SKYBLUE" text="Submit" textFill="WHITE" AnchorPane.bottomAnchor="14.600000000000001" AnchorPane.leftAnchor="148.0" AnchorPane.rightAnchor="148.0">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </JFXButton>
+                <Label fx:id="fillAll" alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="338.0" prefHeight="24.0" prefWidth="211.0" text="Please fill all of the fields" textFill="RED" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="127.0">
+                    <font>
+                        <Font name="Segoe UI" size="19.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="54.0" prefHeight="177.0" prefWidth="454.0" text="Strategically planting trees around your home can have tremendous benefits on the environment. Not only will you help restore life quality in your community, contribute to the environment and help fight climate change, but you will also set an example. Therefore, planting a beautiful tree is always a good idea!" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="3.400000000000034">
+                    <font>
+                        <Font name="Segoe UI Light" size="17.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>

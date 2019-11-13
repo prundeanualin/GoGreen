@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="918.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gogreenclient.screens.StatisticController">
+    <children>
+        <AnchorPane prefHeight="588.0" prefWidth="210.0" style="-fx-background-color: #00AB66;" HBox.hgrow="NEVER">
+            <children>
+                <ImageView fitHeight="82.0" fitWidth="77.0" layoutX="73.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="72.4" AnchorPane.topAnchor="20.0">
+                    <image>
+                        <Image url="@../static/gg3.png" />
+                    </image>
+                    <effect>
+                        <ColorAdjust brightness="1.0" />
+                    </effect>
+                </ImageView>
+                <GridPane layoutY="104.0" prefHeight="485.0" prefWidth="222.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="101.60000000000002">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.5999755859375" minWidth="0.0" prefWidth="0.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="221.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                    </rowConstraints>
+                    <children>
+                        <JFXButton onAction="#closeProgram" prefHeight="118.0" prefWidth="242.0" styleClass="button1" stylesheets="@../static/hover.css" text="Exit" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Segoe UI Light" size="26.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="fas-window-close" iconSize="35" selectionFill="#00ff2b" />
+                            </graphic>
+                            <ripplerFill>
+                                <RadialGradient centerX="0.5466666486528184" centerY="0.5229007633587786" radius="0.5">
+                                    <stops>
+                                        <Stop color="#e80707" />
+                                        <Stop color="#eb8888" offset="1.0" />
+                                    </stops>
+                                </RadialGradient>
+                            </ripplerFill>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="12.0" prefHeight="177.0" prefWidth="308.0" ripplerFill="SKYBLUE" style="-fx-background-color: #4682B4;" text="Show statistics" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Segoe UI Light" size="24.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="far-chart-bar" iconSize="35" selectionFill="#00ff2b" />
+                            </graphic>
+                            <padding>
+                                <Insets bottom="1.0" top="1.0" />
+                            </padding>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="12.0" onAction="#showFriends" prefHeight="143.0" prefWidth="263.0" ripplerFill="SKYBLUE" stylesheets="@../static/hover.css" text="Show friends" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Segoe UI Light" size="24.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="fas-users" iconSize="35" selectionFill="#00ff2b" />
+                            </graphic>
+                            <padding>
+                                <Insets bottom="1.0" top="1.0" />
+                            </padding>
+                        </JFXButton>
+                        <JFXButton onAction="#addActivity" prefHeight="156.0" prefWidth="222.0" ripplerFill="SKYBLUE" stylesheets="@../static/hover.css" text="Add new green activity" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1">
+                            <font>
+                                <Font name="Segoe UI Light" size="23.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="fas-plus" iconSize="35" selectionFill="#00ff2b" />
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#switchAchievements" prefHeight="98.0" prefWidth="238.0" ripplerFill="SKYBLUE" stylesheets="@../static/hover.css" text="See all achivements" textAlignment="CENTER" textFill="#eaeaea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Segoe UI Light" size="24.0" />
+                            </font>
+                            <graphic>
+                                <FontIcon fontSmoothingType="LCD" iconColor="#eaeaea" iconLiteral="far-check-circle" iconSize="35" selectionFill="#00ff2b" />
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </GridPane>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+        <AnchorPane prefHeight="587.0" prefWidth="501.0" HBox.hgrow="ALWAYS">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="14.0" text="Statistics" textAlignment="CENTER" textFill="#00ab66" wrapText="true" AnchorPane.leftAnchor="164.0" AnchorPane.rightAnchor="166.40000000000003" AnchorPane.topAnchor="14.0">
+                    <font>
+                        <Font name="Segoe UI Light" size="44.0" />
+                    </font>
+                </Label>
+                <PieChart fx:id="pieChart" layoutX="26.0" layoutY="254.0" prefHeight="307.0" prefWidth="436.0" stylesheets="@../static/pieChart.css" AnchorPane.bottomAnchor="26.000000000000057" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="23.600000000000023" AnchorPane.topAnchor="254.00000000000006" />
+                <Label layoutX="26.0" layoutY="95.0" text="Total green activities:">
+                    <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="26.0" layoutY="128.0" text="GoGreener days:">
+                    <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="26.0" layoutY="162.0" text="Total green achievements:">
+                    <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="totalActivities" layoutX="270.0" layoutY="91.0" prefHeight="27.0" prefWidth="92.0" text="" textFill="#029759">
+                    <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="totalDays" layoutX="270.0" layoutY="125.0" prefHeight="27.0" prefWidth="100.0" text="setTotaldays" textFill="#029759">
+                    <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="totalAchievements" layoutX="270.0" layoutY="161.0" prefHeight="27.0" prefWidth="169.0" text="setTotalAchievements" textFill="#029759">
+                    <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="215.0" text="Green activities distribution" textAlignment="CENTER" textFill="#00ab66" wrapText="true" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="74.80000000000001" AnchorPane.topAnchor="215.0">
+                    <font>
+                        <Font name="Segoe UI Light" size="27.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="200.0" prefWidth="210.0" style="-fx-background-color: #00AB66;" HBox.hgrow="NEVER">
+            <children>
+                <AnchorPane layoutX="1.0" layoutY="294.0" prefHeight="274.0" prefWidth="184.0" AnchorPane.bottomAnchor="18.800000000000068">
+                    <children>
+                  <AnchorPane layoutX="9.0" prefHeight="274.0" prefWidth="189.0" style="-fx-background-color: #3CB371;" />
+                        <Label layoutX="21.0" prefHeight="36.0" prefWidth="168.0" text="Latest activities:" textFill="#eaeaea" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="19.0">
+                            <font>
+                                <Font name="Segoe UI Light" size="25.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="recentActivityOne" alignment="TOP_LEFT" layoutX="27.0" layoutY="36.0" prefHeight="66.0" prefWidth="166.0" text="Set_activity type" textFill="#eaeaea" wrapText="true" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="13.0">
+                            <font>
+                                <Font name="Segoe UI Light" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="firstActivityDate" layoutX="25.0" layoutY="101.0" prefHeight="26.0" prefWidth="166.0" text="Set_date" textFill="#eaeaea" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="15.0">
+                            <font>
+                                <Font name="Segoe UI Light" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="firstActivityAmount" layoutX="26.0" layoutY="127.0" prefHeight="26.0" prefWidth="166.0" text="Set_saved_amount" textFill="SKYBLUE" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="14.0">
+                            <font>
+                                <Font name="Segoe UI Light" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="11.0" layoutY="36.0" prefHeight="30.0" prefWidth="18.0" text="1." textFill="#eaeaea" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="183.0">
+                            <font>
+                                <Font name="Segoe UI Light" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="recentActivityTwo" alignment="TOP_LEFT" layoutX="26.0" layoutY="154.0" prefHeight="66.0" prefWidth="166.0" text="Set_activity type" textFill="#eaeaea" wrapText="true" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="14.0">
+                            <font>
+                                <Font name="Segoe UI Light" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="secondActivityDate" layoutX="26.0" layoutY="219.0" prefHeight="26.0" prefWidth="170.0" text="Set_date" textFill="#eaeaea" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="10.0">
+                            <font>
+                                <Font name="Segoe UI Light" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="secondActivityAmount" layoutX="25.0" layoutY="245.0" prefHeight="26.0" prefWidth="166.0" text="Set_saved_amount" textFill="SKYBLUE" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="15.0">
+                            <font>
+                                <Font name="Segoe UI Light" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="154.0" prefHeight="30.0" prefWidth="20.0" text="2." textFill="#eaeaea" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="176.0">
+                            <font>
+                                <Font name="Segoe UI Light" size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <effect>
+                        <DropShadow height="2.0" radius="0.0" spread="0.16" width="0.0" />
+                    </effect>
+                </AnchorPane>
+                <VBox layoutX="6.0" layoutY="130.0" prefHeight="66.0" prefWidth="198.0" AnchorPane.topAnchor="130.0">
+                    <children>
+                        <Label fx:id="userName" alignment="CENTER" prefHeight="39.0" prefWidth="200.0" text="Stranger" textAlignment="CENTER" textFill="#eaeaea" VBox.vgrow="ALWAYS">
+                            <font>
+                                <Font name="Segoe UI Light" size="27.0" />
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="107.0" prefWidth="112.0" spacing="4.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <Label text="money saved:" textFill="SKYBLUE" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Segoe UI Light" size="16.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="savedMoney" text="money saved" textFill="SKYBLUE" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Segoe UI Light" size="17.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="8.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Label layoutX="45.0" layoutY="209.0" prefHeight="39.0" prefWidth="130.0" text="Total CO  saved:" textAlignment="CENTER" textFill="#eaeaea" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="209.0">
+                    <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="110.0" layoutY="229.0" prefHeight="18.0" prefWidth="11.0" text="2" textFill="#eaeaea" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="93.0" AnchorPane.topAnchor="229.0" />
+                <HBox alignment="CENTER" layoutX="-1.0" layoutY="245.0" prefHeight="32.0" prefWidth="210.0" AnchorPane.topAnchor="245.0">
+                    <children>
+                        <Label fx:id="totalSaved" alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="59.0" text="set_total" textAlignment="RIGHT" textFill="SKYBLUE" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Segoe UI Light" size="22.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="32.0" prefWidth="30.0" text="KG" textFill="SKYBLUE" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Segoe UI Light" size="22.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            <AnchorPane prefHeight="85.0" prefWidth="210.0" style="-fx-background-color: #3CB371;" AnchorPane.topAnchor="0.0" />
+            <Circle fill="MEDIUMSEAGREEN" layoutX="105.0" layoutY="77.0" radius="53.0" stroke="MEDIUMSEAGREEN" strokeType="INSIDE" AnchorPane.topAnchor="25.0" />
+            <Circle fx:id="circlePic" fill="DODGERBLUE" layoutX="105.0" layoutY="78.0" radius="53.0" stroke="MEDIUMSEAGREEN" strokeType="INSIDE" AnchorPane.topAnchor="25.0" />
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+    </children>
+</HBox>

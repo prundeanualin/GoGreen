@@ -1,0 +1,27 @@
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:identity.jks
+    key-store-type: PKCS12
+    key-store-password: group82
+    trust-store: classpath:truststore.jks
+    trust-store-password: group82
+    client-auth: need
+
+spring:
+  datasource:
+    url: jdbc:mysql://projects-db.ewi.tudelft.nl:3306/projects_GoGreen82-2
+    username: pu_GoGreen82-2
+    password: J1QYXLS99crs
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          filter:
+            CommonsRequestLoggingFilter: DEBUG

@@ -1,0 +1,23 @@
+.button {
+    -fx-background-color: #00AB66;
+
+}
+
+.button:hover {
+    -fx-background-color: #29AB87;
+
+}
+
+.button1:hover {
+    -fx-background-color: #FA8072;
+
+}
+
+.button1 {
+    -fx-background-color: #50C878;
+}
+.datePicker{
+    -fx-font-size: 15;
+    -fx-font-style: italic;
+}
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="111.0" prefWidth="380.0" style="-fx-background-color: #F8F8F8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gogreenclient.screens.InformController">
+    <children>
+        <Label fx:id="information" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" prefHeight="67.0" prefWidth="330.0" text="" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="0.0">
+            <font>
+                <Font name="Segoe UI Light" size="17.0" />
+            </font>
+        </Label>
+        <JFXButton layoutX="139.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#no" prefHeight="34.0" prefWidth="95.0" ripplerFill="#ff2828" style="-fx-background-color: #F0F0F0; -fx-border-color: #b8b8b8;" text="OK" AnchorPane.bottomAnchor="5.600000000000001" AnchorPane.rightAnchor="50.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="Segoe UI Light" size="15.0" />
+            </font>
+        </JFXButton>
+    </children>
+    <effect>
+        <DropShadow height="48.99" radius="15.4425" width="14.78" />
+    </effect>
+</AnchorPane>
